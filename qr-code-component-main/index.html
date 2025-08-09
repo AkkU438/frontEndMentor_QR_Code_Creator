@@ -2,27 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/image-qr-code.png">
   
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .text{
+      font-size: 15px;
+      
+    }
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(212, 45%, 89%);
+
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      
+    }
+    .container {
+      width: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-sizing: border-box;
+      text-align: center;
+    
+    }
+    .container img{
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
   </style>
 </head>
+
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="center">
+    <div class ="container">
+      <img src = "images/image-qr-code.png" alt = "QR Code" role="img" width="300"/>
+      <h3>Improve your front-end skills by building projects</h3>
+      <p class="text" style="font-family: Outfit, sans-serif; color: hsl(0, 0%, 55%);">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+  </div>  
+</div>
 </body>
 </html>
